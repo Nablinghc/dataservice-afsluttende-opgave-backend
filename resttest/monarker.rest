@@ -56,4 +56,4 @@ content-type: application/json
      "historie" : "En lang historie",
      "foedt" : "1920-11-12",
      "doed" : "2019-12-12"
-}
+} 
