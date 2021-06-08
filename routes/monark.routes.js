@@ -47,7 +47,8 @@ router.get( '/soeg/:soegeord', async ( req, res ) => { //
         const monarker = await Monark.find( {
             $or: [
                 { "navn": { "$regex": req.params.soegeord, "$options": "i" } },       // søg i alt som små bogstaver
-                { "historie": { "$regex": req.params.soegeord, "$options": "i" } }
+                { "historie": { "$regex": req.params.soegeord, "$options": "i" } },
+                { "land": { "$regex": req.params.soegeord, "$options": "i" } }
             ]
         } )
 
